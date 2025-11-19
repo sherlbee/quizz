@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz E-Commerce</title>
+
+    <!-- CSS DI GABUNGKAN DI SINI -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f6f6;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #20232a;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #61dafb;
+        }
+
+        /* HERO */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 140px 20px;
+        }
+
+        .hero .btn {
+            background: #61dafb;
+            padding: 12px 25px;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* PRODUK */
+        .produk-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .produk-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .produk-card {
+            background: white;
+            width: 230px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .produk-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .produk-card button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #20232a;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* TENTANG */
+        .tentang {
+            padding: 40px;
+            background: white;
+            text-align: center;
+        }
+
+        /* KONTAK */
+        .kontak {
+            padding: 40px;
+            text-align: center;
+            background: #fafafa;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #20232a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h1 class="logo">MyShop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <h2>Selamat Datang di MyShop</h2>
+        <p>Toko online terbaik dengan produk berkualitas.</p>
+        <a href="#produk" class="btn">Belanja Sekarang</a>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="produk" class="produk-section">
+        <h2>Produk Kami</h2>
+
+        <div class="produk-container">
+
+            <div class="produk-card">
+                <img src="https://via.placeholder.com/200" alt="Produk 1">
+                <h3>Produk 1</h3>
+                <p>Rp 75.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="produk-card">
+                <img src="https://via.placeholder.com/200" alt="Produk 2">
+                <h3>Produk 2</h3>
+                <p>Rp 120.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="produk-card">
+                <img src="https://via.placeholder.com/200" alt="Produk 3">
+                <h3>Produk 3</h3>
+                <p>Rp 99.000</p>
+                <button>Beli</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="tentang">
+        <h2>Tentang Kami</h2>
+        <p>
+            MyShop adalah website e-commerce sederhana yang dibangun menggunakan HTML & CSS 
+            untuk memenuhi tugas quiz. Kami menyediakan contoh tampilan toko online yang bersih, 
+            responsif, dan mudah dikembangkan.
+        </p>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="kontak">
+        <h2>Kontak</h2>
+        <p>Email : myshop@example.com</p>
+        <p>Instagram : @myshop.id</p>
+        <p>No. WA : 0812-3456-7890</p>
+    </section>
+
+    <footer>
+        <p>© 2025 MyShop – Quiz E-Commerce</p>
+    </footer>
+
+</body>
+</html>
